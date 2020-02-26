@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang = "en">
+  <head>
+    <link rel="stylesheet" type = "text/css" href="style.css">
+    <script src = "script.js"></script>
+    <link href = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel = "stylesheet" integrity = "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin = "anonymous">
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <title>Travel Calculator Sonnheim</title>
+  </head>
+  <body>
+    <div class = "container-fluid" id = "travelCalculator">
+      <div id = "travelCalculatorRow" class = "row row-eq-height">
+        <div id = "leftColumn" class = "col-sm-4">
+          <!--Card Begin-->
+          <div id = "leftCard" class = "card mb-3">
+            <img src = "pictures/feet.jpg" alt = "Feet" class = "card-img">
+            <div class = "card-img-overlay">
+              <h1 class = "card-title text-black h2">By Foot</h1>
+            </div>
+          </div>
+          <!--Card End-->
+          <!--Input Box Begin-->
+          <div class = "input-group mb-3">
+            <div class = "input-group-prepend">
+              <span class = "input-group-text" id = "basic-addon1"><i class="fas fa-route"></i></span>
+            </div>
+            <input id = "feetmiles" name = "feetmiles" type = "number" class = "form-control" placeholder = "Distance (Miles)" aria-label = "Username" aria-describedy = "basic-addon1">
+          </div>
+          <!--Input Box End-->
+          <!--Input Box Begin-->
+          <div class = "input-group mb-3">
+            <div class = "input-group-prepend">
+              <span class = "input-group-text" id = "basic-addon1"><i class="fas fa-money-bill-wave"></i></span>
+            </div>
+            <input id = "feetrate" name = "feetrate" type = "number" class = "form-control" placeholder = "Rate Per Mile ($USD)" aria-label = "Username" aria-describedy = "basic-addon1">
+          </div>
+          <!--Input Box End-->
+          <button id = "calculatebuttonfeet" onclick = "feetCalculate()" type = "button" name = "button">Calculate Foot Price</button>
+        </div>
+        <div id = "middleColumn" class = "col-sm-4">
+          <!--Card-->
+          <div id = "middleCard" class = "card mb-3">
+            <img src = "pictures/train.jpg" alt = "Train" class = "card-img">
+            <div class = "card-img-overlay">
+              <h1 class = "card-title text-black h2">By Train</h1>
+            </div>
+          </div>
+          <!--Card End-->
+          <!--Input Box Begin-->
+          <div class = "input-group mb-3">
+            <div class = "input-group-prepend">
+              <span class = "input-group-text" id = "basic-addon1"><i class="fas fa-route"></i></span>
+            </div>
+            <input id = "trainmiles" name = "trainmiles" type = "number" class = "form-control" placeholder = "Distance (Miles)" aria-label = "Username" aria-describedy = "basic-addon1">
+          </div>
+          <!--Input Box End-->
+          <!--Input Box Begin-->
+          <div class = "input-group mb-3">
+            <div class = "input-group-prepend">
+              <span class = "input-group-text" id = "basic-addon1"><i class="fas fa-money-bill-wave"></i></span>
+            </div>
+            <input id = "trainrate" name = "trainrate" type = "number" class = "form-control" placeholder = "Rate Per Mile ($USD)" aria-label = "Username" aria-describedy = "basic-addon1">
+          </div>
+          <!--Input Box End-->
+          <button id = "calculatebuttontrain" onclick = "trainCalculate()" type = "button" name = "button">Calculate Train Price</button>
+        </div>
+        <div id = "rightColumn" class = "col-sm-4">
+          <!--Card-->
+          <div id = "rightCard" class = "card mb-3">
+            <img src = "pictures/plane.jpg" alt = "Plane" class = "card-img">
+            <div class = "card-img-overlay">
+              <h1 class = "card-title text-black h2">By Plane</h1>
+            </div>
+          </div>
+          <!--Card End-->
+          <!--Input Box Begin-->
+          <div class = "input-group mb-3">
+            <div class = "input-group-prepend">
+              <span class = "input-group-text" id = "basic-addon1"><i class="fas fa-route"></i></span>
+            </div>
+            <input id = "planemiles" name = "planemiles" type = "number" class = "form-control" placeholder = "Distance (Miles)" aria-label = "Username" aria-describedy = "basic-addon1">
+          </div>
+          <!--Input Box End-->
+          <!--Input Box Begin-->
+          <div class = "input-group mb-3">
+            <div class = "input-group-prepend">
+              <span class = "input-group-text" id = "basic-addon1"><i class="fas fa-money-bill-wave"></i></span>
+            </div>
+            <input id = "planerate" name = "planerate" type = "number" class = "form-control" placeholder = "Rate Per Mile ($USD)" aria-label = "Username" aria-describedy = "basic-addon1">
+          </div>
+          <!--Input Box End-->
+          <button id = "calculatebuttonplane" onclick = "planeCalculate()" type = "button" name = "button">Calculate Plane Price</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

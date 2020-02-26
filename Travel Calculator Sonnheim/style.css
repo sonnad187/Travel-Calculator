@@ -1,0 +1,60 @@
+#leftColumn {
+    background-color: lightgreen;
+    height: 100vh;
+}
+
+#middleColumn {
+    background-color: lightgrey;
+    height: 100vh;
+}
+
+#rightColumn {
+    background-color: lightblue;
+    height: 100vh;
+}
+
+h1 {
+  text-align: center;
+}
+
+.card-img {
+  width: 100%;
+  height: 20vw;
+  object-fit: cover;
+}
+
+#calculatebuttonfeet {
+  background-color: lightblue;
+  color: black;
+  bottom: 5%;
+  right: 40%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+#calculatebuttontrain {
+  background-color: lightgreen;
+  color: black;
+  bottom: 5%;
+  right: 40%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+#calculatebuttonplane {
+  background-color: lightgray;
+  color: black;
+  bottom: 5%;
+  right: 40%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
